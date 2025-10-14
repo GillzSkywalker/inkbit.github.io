@@ -1,0 +1,94 @@
+/* =======================
+   General Body Styling
+   ======================= */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('HD-wallpaper-japanese-castle-pixel-art.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #dac5c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* =======================
+   Login Container
+   ======================= */
+.login-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.login-container h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* =======================
+   Login Form Styling
+   ======================= */
+form#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: rgba(0,0,0,0.4); /* subtle translucent background */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* soft blur for modern look */
+}
+
+/* Input fields */
+form#login-form input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Submit button */
+form#login-form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form#login-form button:hover {
+    background-color: #45a049;
+}
+
+/* =======================
+   Sign-up Link Styling
+   ======================= */
+h3 {
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+h3 a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+    color: #66b2ff;
+}

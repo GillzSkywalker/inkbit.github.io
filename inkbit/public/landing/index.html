@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkBit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <header>
+        <nav>
+            <h1>Inkbit</h1>
+            <h2>Collect what you Geek in for</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/admin/index.html">Admin</a></li>
+                <li><a href="/index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+     <main>
+        <section class="hero">
+            <h2>Welcome to My Web App</h2>
+            <p>This is a simple web application using Node.js, Express, and MongoDB.</p>
+            <a href="/login.html" class="btn">Get Started</a>
+        </section>
+
+        <section class="form collection">
+             <div class="form-container">
+    <h2>Add New Item</h2>
+    <label>Title *</label>
+    <input type="text">
+
+    <label>Author / Creator</label>
+    <input type="text">
+
+    <label>Rating (1-10)</label>
+    <input type="number" min="1" max="10">
+
+    <label>Volumes Owned</label>
+    <input type="number" min="0">
+
+    <label>Total Volumes</label>
+    <input type="number" min="0">
+
+    <label>Comments / Notes</label>
+    <textarea></textarea>
+
+    <button>Add</button>
+  </div>
+
+  <!-- ===== FILTERS ===== -->
+  <div class="filters">
+    <label>Filter by type:</label>
+    <select>
+      <option>All types</option>
+      <option>Manga</option>
+      <option>Comic</option>
+    </select>
+
+    <label>Filter by status:</label>
+    <select>
+      <option>All status</option>
+      <option>Completed</option>
+      <option>Reading</option>
+      <option>On-hold</option>
+    </select>
+
+    <label>Sort by:</label>
+    <select>
+      <option>Title</option>
+      <option>Rating</option>
+      <option>Volumes Owned</option>
+    </select>
+  </div>
+
+  <!-- ===== STATS ===== -->
+  <div class="stats">
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Total Items</p>
+    </div>
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Completed</p>
+    </div>
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Reading</p>
+    </div>
+    <div class="stat-box">
+      <h3>0</h3>
+      <p>Total Ratings</p>
+    </div>
+
+    <button>View Achievements</button>
+  </div>
+
+        </section>
+    </main>
+      <footer>
+        <p>&copy; 2025 My Web App. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
