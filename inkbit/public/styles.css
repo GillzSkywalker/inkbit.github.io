@@ -1,94 +1,115 @@
-/* =======================
-   General Body Styling
-   ======================= */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('HD-wallpaper-japanese-castle-pixel-art.jpg'); 
+    background-image: url("intro.jpg"); 
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #dac5c5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-/* =======================
-   Login Container
-   ======================= */
+/* Login Container */
 .login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
     text-align: center;
-    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* Headings */
 .login-container h2 {
-    font-size: 2rem;
     margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.login-container h2 span {
+    color: #f99877;
 }
 
 .login-container h4 {
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #ddd;
 }
 
-/* =======================
-   Login Form Styling
-   ======================= */
-form#login-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: rgba(0,0,0,0.4); /* subtle translucent background */
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(5px); /* soft blur for modern look */
-}
-
-/* Input fields */
-form#login-form input {
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* Submit button */
-form#login-form button {
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-form#login-form button:hover {
-    background-color: #45a049;
-}
-
-/* =======================
-   Sign-up Link Styling
-   ======================= */
-h3 {
-    margin-top: 15px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-weight: 400;
 }
 
-h3 a {
-    color: #007bff;
+input::placeholder {
+    color: #ccc;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #fc744b;
+    color: #1e1e2f;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #ffc94b;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #ffb400;
+    color: #ffb400;
+}
+
+.btn-secondary:hover {
+    background-color: #ffb400;
+    color: #1e1e2f;
+}
+
+/* Sign-up Text */
+.signup-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.signup-text a {
+    color: #ffb400;
     text-decoration: none;
-    transition: 0.2s;
 }
 
-h3 a:hover {
+.signup-text a:hover {
     text-decoration: underline;
-    color: #66b2ff;
 }
