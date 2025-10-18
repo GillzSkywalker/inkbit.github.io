@@ -1,0 +1,179 @@
+/* Base Styles and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Header and Navigation --- 
+*/
+
+header {
+    background: #34495e; /* Dark blue/grey */
+    color: #ecf0f1; /* Light text */
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffcc00; /* Accent color for the logo */
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #34495e;
+    background-color: #ecf0f1;
+}
+
+/* --- Library Section --- 
+*/
+
+.library {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.library h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.library p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* --- Library Items --- 
+*/
+
+.library-item {
+    background-color: #ecf0f1;
+    border: 1px solid #dcdde1;
+    padding: 20px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.library-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.library-item h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #bdc3c7;
+    padding-bottom: 5px;
+}
+
+.library-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 5px 0;
+    /* Reset margin from the general .library p */
+    margin-bottom: 0; 
+}
+
+/* Status specific coloring for better visual feedback */
+.library-item p:nth-of-type(2) { /* Targeting the Status line */
+    font-weight: 600;
+}
+
+.library-item p:has(span.status-ongoing) {
+    color: #e67e22; /* Orange for ongoing */
+}
+
+.library-item p:has(span.status-completed) {
+    color: #27ae60; /* Green for completed */
+}
+
+/* --- Button Styles --- 
+*/
+
+.library-button {
+    grid-column: 1 / -1; /* Make the button container span all columns */
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #3498db; /* Blue for action */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-weight: 600;
+}
+
+.btn-add:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+.btn-add:active {
+    background-color: #2c3e50;
+}
+
+/* Small adjustments to integrate status coloring visually (optional) */
+/* Adding spans to the HTML around Status for this to work is recommended, 
+   but for the given HTML, we'll rely on the nth-of-type selector above, 
+   or alternatively, target specific content. */
+/* For the sake of completeness, imagine the HTML was: 
+   <p>Status: <span class="status-ongoing">Ongoing</span></p> */
