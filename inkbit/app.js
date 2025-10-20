@@ -24,9 +24,6 @@ app.use('/users', users);
 // Admin routes
 app.use('/admin', auth, express.static(path.join(__dirname, 'public/admin')));
 
-// Landing page route
-app.use('/', express.static(path.join(__dirname, 'public/landing')));
-
 // Login route
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;

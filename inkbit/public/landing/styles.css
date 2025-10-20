@@ -145,6 +145,7 @@ main {
     font-weight: 600;
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    opacity: 305; 
 }
 
 .btn:hover {
