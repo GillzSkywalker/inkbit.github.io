@@ -1,0 +1,75 @@
+/* ---------------------------------
+   GENERAL RESET
+----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------
+   BODY STYLING
+----------------------------------- */
+body {
+  background: url("public/HD-wallpaper-japanese-castle-pixel-art.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------
+   CONTAINER
+----------------------------------- */
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------
+   TITLES
+----------------------------------- */
+h1 {
+  font-size: 3rem;
+  color: #ffb700;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+
+/* ---------------------------------
+   BUTTON STYLING
+----------------------------------- */
+button {
+  background-color: #ffb700;
+  color: #141414;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* ---------------------------------
+   BUTTON HOVER EFFECT
+----------------------------------- */
+button:hover {
+  background-color: #ffd84d;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 183, 0, 0.5);
+}
